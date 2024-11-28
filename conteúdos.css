@@ -1,0 +1,971 @@
+/* PARTES DO CORPO HUMANO */
+
+
+#body-cuidados-corpo {
+    font-family: 'Montserrat Alternates', sans-serif;
+    background-color: #A6D093;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  
+  #content-cuidados-corpo {
+    width: 80%; 
+    max-width: 900px; 
+    margin: 0 auto; 
+    background-color: rgb(227, 255, 229);
+    padding: 30px; 
+    border-radius: 10px; 
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); 
+  }
+  
+  
+  #intro-cuidados-corpo h1,
+  #partes-corpo h2,
+  #funcoes-corpo h2,
+  #importancia-higiene h2,
+  #quiz-cuidados-corpo h2 {
+    color: #4b7f4a;
+    text-align: center;
+    font-size: 40px;
+  }
+  
+  #intro-cuidados-corpo p,
+  #funcoes-corpo p,
+  #importancia-higiene p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 25px;
+  }
+  
+  #partes-corpo .parte-corpo {
+    display: inline-block;
+    width: 28%;
+    margin-right: 5%;
+    vertical-align: top;
+    padding: 10px;
+    left: center;
+    justify-content: center;
+
+  }
+  
+  #partes-corpo h3 {
+    font-size: 1.3em;
+    color: #4b7f4a;
+    margin-top: 20px;
+  }
+  
+  #partes-corpo ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  #partes-corpo li {
+    font-size: 1em;
+    margin: 5px 0;
+    position: relative;
+    padding-left: 20px;
+  }
+  
+  #partes-corpo li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #28a745;
+  }
+  
+  /* Imagens das Partes do Corpo */
+  .parte-imagem {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+  }
+  
+  /* Quiz Section */
+  #quiz-cuidados-corpo {
+    background-color: #e6f7ff;
+    padding: 15px;
+    margin-top: 30px;
+  }
+  
+  .alternativa {
+    margin-bottom: 10px;
+  }
+  
+  button {
+    background-color: #2d7edb;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  button:hover {
+    background-color: #1d5bb8;
+  }
+  
+  /* Imagens nas Alternativas do Quiz */
+  .imagem-alternativa {
+    width: 50px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  
+  #resultado, #resultado2 {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #d1e7dd;
+    border: 1px solid #b3d3b8;
+  }
+  
+  #resultado p, #resultado2 p {
+    font-size: 1.1em;
+    color: #28a745;
+  }
+  
+  
+/*PLANTAS E ANIMAIS*/
+
+  #plantinhas {
+    font-family: 'Montserrat Alternates', sans-serif; 
+    background-color: #A6D093;
+    height: 100%;
+    width: 100%;
+    color: #008547;
+    padding: 20px; /* Espaço nas bordas */
+}
+
+/* Container principal da página */
+.content-planta {
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: rgb(227, 255, 229);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Título principal */
+.titulo-planta {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #4b7f4a;
+    margin-bottom: 30px;
+}
+
+
+.plantas {
+    display: flex; /* Torna o container flexível */
+    gap: 80px; /* Define o espaço entre as imagens */
+    margin-bottom: 30px; /* Espaço abaixo do container */
+    flex-wrap: wrap; /* Permite que as imagens quebrem para a linha seguinte se necessário */
+    justify-content: center;
+}
+
+.plantas img {
+    width: 32%; /* Largura de 32% para cada imagem */
+    height: auto; 
+    border-radius: 10%; 
+    object-fit: cover; 
+   
+}
+
+
+.selection-planta {
+    margin-bottom: 30px;
+}
+
+
+.section-planta-title {
+    font-size: 1.8rem;
+    color: #4b7f4a;
+    margin-bottom: 10px;
+}
+
+
+.section-planta-text {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+
+.examples-planta {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+
+.examples-list-planta {
+    list-style-type: disc;
+    margin-left: 20px;
+    font-size: 1rem;
+}
+
+.examples-list-planta li {
+    margin-bottom: 8px;
+}
+
+/* Media query para telas menores */
+@media (max-width: 768px) {
+    .plantas {
+        flex-direction: column; /* Faz as imagens ficarem em coluna em telas menores */
+        align-items: center; /* Alinha as imagens ao centro */
+    }
+
+    .plantas img {
+        width: 80%; /* Imagens ocupando 80% da largura do contêiner */
+        margin-bottom: 20px; /* Adiciona um espaço abaixo das imagens para separar */
+    }
+}
+
+  /* NUMEROS NATURAIS */
+* {
+   
+    box-sizing: border-box;
+}
+
+body.numero {
+    
+    background-color: #e6f4ff; 
+    color: #004085; 
+    padding: 20px; 
+}
+
+
+.contentacao {
+    width: 80%; 
+    max-width: 900px; 
+    margin: 0 auto; 
+    background-color: white; 
+    padding: 30px; 
+    border-radius: 10px; 
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); 
+}
+
+
+.titulo {
+    text-align: center; 
+    font-size: 2.5rem; 
+    color: #004085; 
+    margin-bottom: 30px; 
+}
+
+
+.seleçao {
+    margin-bottom: 30px; 
+}
+
+
+.seleçao-title {
+    font-size: 1.8rem; 
+    color: #007bff; 
+    margin-bottom: 10px; 
+}
+
+
+.section-text {
+    font-size: 1.1rem; 
+    margin-bottom: 15px; 
+}
+
+
+.examples {
+    font-size: 1.2rem; 
+    margin-bottom: 10px; 
+    font-weight: bold; 
+}
+
+
+.examples-list {
+    list-style-type: disc; 
+    margin-left: 20px; 
+    font-size: 1rem; 
+}
+
+.examples-list li {
+    margin-bottom: 8px; 
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Largura maior em telas pequenas */
+    }
+
+    .title {
+        font-size: 2rem; /* Reduzir o tamanho do título */
+    }
+
+    .section-title {
+        font-size: 1.6rem; /* Reduzir o tamanho dos subtítulos */
+    }
+
+    .section-text, .examples, .examples-list {
+        font-size: 1rem; /* Texto um pouco menor em telas pequenas */
+    }
+}
+
+
+/* FORMAS GEOMETRICAS */
+* {
+   
+    box-sizing: border-box;
+}
+
+
+body.formas {
+    font-family: 'Montserrat Alternates', sans-serif; 
+     background-color: #e6f4ff;
+    height: 100%; 
+    width: 100%; 
+    color: #004085; 
+    padding: 20px; 
+}
+
+
+.content-formas {
+    width: 80%; 
+    max-width: 900px; 
+    margin: 0 auto; 
+    background-color: white; 
+    padding: 30px; 
+    border-radius: 10px; 
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); 
+}
+
+
+.titulo-formas {
+    text-align: center; 
+    font-size: 2.5rem; 
+    color: #004085; 
+    margin-bottom: 30px; 
+}
+
+
+.selection-formas {
+    margin-bottom: 30px; 
+}
+
+.formas img {
+    max-width: 50%; 
+    height: auto; 
+    display: block;
+    margin: 0 auto;
+    border-radius: 10%;
+}
+
+    
+
+.section-formas-title {
+    font-size: 1.8rem; 
+    color: #007bff; 
+    margin-bottom: 10px; 
+}
+
+
+.section-formas-text {
+    font-size: 1.1rem; 
+    margin-bottom: 15px; 
+}
+
+
+.examples-formas {
+    font-size: 1.2rem; 
+    margin-bottom: 10px; 
+    font-weight: bold; 
+}
+
+
+.examples-list-formas {
+    list-style-type: disc; 
+    margin-left: 20px; 
+    font-size: 1rem; 
+}
+
+.examples-list-formas li {
+    margin-bottom: 8px; 
+}
+/*FIM FORMAS GEOMETRICAS*/
+
+
+/* ORIGEM DOS HUMANOS */
+* {
+    
+    box-sizing: border-box;
+    
+}
+
+
+body.site-body {
+     
+    background-color: #c99cd1; 
+    color: #4a148c; 
+    padding: 20px; 
+}
+
+.containerrrr {
+    width: 80%; 
+    max-width: 900px; 
+    margin: 0 auto; 
+    background-color: rgb(244, 200, 253); 
+    padding: 30px;
+    border-radius: 10px; 
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); 
+}
+
+
+.titlee {
+    text-align: center; 
+    font-size: 2.5rem; 
+    color: #4a148c; 
+    margin-bottom: 30px; 
+}
+
+
+.selection-h {
+    margin-bottom: 30px; 
+}
+
+
+.selection-h-title {
+    font-size: 1.8rem; 
+    color: #6a1b9a; 
+    margin-bottom: 15px; 
+}
+
+
+.selection-h-text {
+    font-size: 1.1rem; 
+    margin-bottom: 15px; 
+}
+
+
+.subsectionn {
+    margin-bottom: 20px; 
+}
+
+.subsectionn-title {
+    font-size: 1.5rem; 
+    color: #8e24aa; 
+    margin-bottom: 10px; 
+}
+
+.subsectionn-text {
+    font-size: 1rem; 
+    margin-bottom: 10px; 
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Largura maior em telas pequenas */
+    }
+
+    .title {
+        font-size: 2rem; /* Reduzir o tamanho do título */
+    }
+
+    .section-title {
+        font-size: 1.6rem; /* Reduzir o tamanho dos subtítulos */
+    }
+
+    .section-text, .subsection-text {
+        font-size: 1rem; /* Ajuste de fonte para telas pequenas */
+    }
+}
+
+
+
+/* MEIOS DE TRANSPORTE E COMUNICAÇÃO */
+* {
+    
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Montserrat Alternates', sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    color: #333;
+  }
+  
+  #main-body {
+    background-color: #f7deb1;
+  }
+  
+  #content-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  #intro-section {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    color: #333;
+  }
+  
+  #meios-transporte, #meios-comunicacao {
+    margin-bottom: 30px;
+    color:#333;
+  }
+  
+  .meio {
+    background-color: #fff7d6;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .meio h3 {
+    color: #ff8800;
+  }
+  
+  .meio ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .meio .imagem {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .meio .imagem img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+  }
+  
+  #quiz-section {
+    background-color: #fff7d6;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  form .alternativa {
+    margin-bottom: 15px;
+  }
+  
+  form input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  form label img {
+    width: 100px;
+    margin-right: 10px;
+    border-radius: 3px;
+  }
+  
+  button[type="button"] {
+    background-color: #281c49;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="button"]:hover {
+    background-color: #1e407e;
+  }
+  
+  #resultado {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f3b43f;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  #resultado p {
+    font-weight: bold;
+  }
+
+
+
+  /*QUEM SÃO OS MAPAS?*/
+
+/* Estilo global para o body */
+#mapinhas {
+    font-family: 'Montserrat Alternates', sans-serif; /* Fonte simples e fácil de ler */
+    background-color: #fdd394;
+    height: 100%;
+    width: 100%;
+    color: #854b00;
+    padding: 20px; /* Espaço nas bordas */
+}
+
+/* Container principal da página */
+.content-mapa {
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.788);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Título principal */
+.titulo-mapa {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #f79452;
+    margin-bottom: 30px;
+}
+
+
+.mapas {
+    display: flex; /* Torna o container flexível */
+    gap: 80px; /* Define o espaço entre as imagens */
+    margin-bottom: 30px; /* Espaço abaixo do container */
+    flex-wrap: wrap; /* Permite que as imagens quebrem para a linha seguinte se necessário */
+    justify-content: center;
+}
+
+.mapas img {
+    width: 32%; /* Largura de 32% para cada imagem */
+    height: auto; 
+    border-radius: 10%; 
+    object-fit: cover; 
+   
+}
+
+
+.selection-mapa {
+    margin-bottom: 30px;
+}
+
+
+.section-mapa-title {
+    font-size: 1.8rem;
+    color: #e09952;
+    margin-bottom: 10px;
+}
+
+
+.section-mapa-text {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+
+.examples-mapa {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+
+.examples-list-mapa {
+    list-style-type: disc;
+    margin-left: 20px;
+    font-size: 1rem;
+}
+
+.examples-list-mapa li {
+    margin-bottom: 8px;
+}
+
+/* Media query para telas menores */
+@media (max-width: 768px) {
+    .mapas {
+        flex-direction: column; /* Faz as imagens ficarem em coluna em telas menores */
+        align-items: center; /* Alinha as imagens ao centro */
+    }
+
+    .mapas img {
+        width: 80%; /* Imagens ocupando 80% da largura do contêiner */
+        margin-bottom: 20px; /* Adiciona um espaço abaixo das imagens para separar */
+    }
+}
+
+
+/* AVENTURA COM O ALFABETO */
+* {
+    
+    box-sizing: border-box;
+    
+}
+
+.back-btn-iniciop {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+.body-alfabeto {
+    
+    background-color: #D88585; 
+    color: #333; 
+    line-height: 1.6;
+    
+
+}
+
+.content-port {
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto; 
+    background-color: rgb(243, 205, 205);
+    padding: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 15px; 
+}
+
+h1.title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #d15959;
+}
+
+.intro {
+    font-size: 1 rem;
+    margin-bottom: 30px;
+}
+
+.chapter, .interlude {
+    margin-top: 30px;
+    padding-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #d15959;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+
+.image-placeholder {
+    background-color: #e0e0e0;
+    height: 200px;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 200px;
+    color: #888;
+    font-size: 1.2rem;
+    border-radius: 5px; 
+}
+
+
+.conclusion, .final {
+    font-size: 1.2rem;
+    margin-top: 30px;
+}
+
+
+.conclusion h2 {
+    font-size: 1.8rem;
+    color: #d15959;
+}
+
+
+.final h2 {
+    font-size: 1.8rem;
+    color: #d15959;
+    margin-top: 30px;
+}
+
+/* Definindo o layout para telas menores */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    h1.title {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p, .intro {
+        font-size: 1rem;
+    }
+
+    .image-placeholder {
+        height: 150px;
+        line-height: 150px;
+    }
+}
+
+.quiz-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    align-items: center;
+    
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.question p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.option {
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.option:hover {
+    transform: scale(1.05);
+    border-color: #999;
+}
+
+.option img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.feedback {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    display: none;
+}
+
+.feedback.correct {
+    color: green;
+}
+
+.feedback.incorrect {
+    color: red;
+}
+
+
+/* TEXTOS LITERÁRIOS */
+* {
+
+    box-sizing: border-box;
+}
+
+body.textos {
+    font-family: 'Montserrat Alternates' , sans-serif;
+    background-color: #D88585; 
+    color: #7e3233; 
+    padding: 20px; 
+}
+
+
+.content-textos {
+    width: 80%; 
+    max-width: 900px; 
+    margin: 0 auto; 
+    background-color: rgb(243, 205, 205); 
+    padding: 30px; 
+    border-radius: 10px; 
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); 
+}
+
+
+.titulo-textos {
+    text-align: center; 
+    font-size: 2.5rem; 
+    color: #d15959; 
+    margin-bottom: 30px; 
+}
+
+
+.seleçao-textos {
+    margin-bottom: 20px; 
+}
+
+
+.seleçao-title-textos {
+    font-size: 1.5rem; 
+    color: #d15959; 
+    margin-bottom: 10px; 
+}
+
+
+.section-text-textos {
+    font-size: 1.1rem; 
+    margin-bottom: 15px; 
+}
+
+
+.examples-textos {
+    font-size: 1.2rem; 
+    margin-bottom: 10px; 
+    font-weight: bold; 
+}
+
+
+.examples-list-textos {
+    list-style-type: disc; 
+    margin-left: 20px; 
+    font-size: 1rem; 
+}
+
+.examples-list-textos li {
+    margin-bottom: 8px; 
+}
+
+
+.textos img {
+    max-width: 40%; 
+    height: auto; 
+    display: block;
+    margin: 0 auto;
+    border-radius: 10%;
+}
+
+
+
+
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Largura maior em telas pequenas */
+    }
+
+    .title {
+        font-size: 2rem; /* Reduzir o tamanho do título */
+    }
+
+    .section-title {
+        font-size: 1.6rem; /* Reduzir o tamanho dos subtítulos */
+    }
+
+    .section-text, .examples, .examples-list {
+        font-size: 1rem; /* Texto um pouco menor em telas pequenas */
+    }
+}

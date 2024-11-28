@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <title>Quem são os Mapas?</title>
+    <link rel="stylesheet" href="conteúdos.css">
+</head>
+<body id="mapinhas">
+
+    <div><button class="back-btn-iniciop" onclick="window.location.href='geografia.html';">&#8592;</button></div>
+
+    <div class="content-mapa">
+        <h1 class="titulo-mapa">Explorando o Mundo com Mapas e Modelos! 🌍🎨</h1>
+        <p class="conteudo-mapas">Quando olhamos para o mundo, podemos ver as coisas de muitas maneiras diferentes. E uma das formas mais legais de entender onde tudo está é através dos mapas e modelos! Vamos descobrir como eles funcionam e como podemos usar para explorar o nosso planeta!
+        </p>
+
+        <section class="selection-mapa">
+            <h2 class="section-mapa-title">O que são Imagens 2D? 📝</h2>
+            <p class="section-mapa-text">Imagens 2D são aquelas que só têm altura e largura. Isso significa que elas são planas, como uma folha de papel! 🤓.</p>
+            <ul class="examples-list-mapa">
+                <p class="examples-mapa">Exemplos de Imagens 2D:</p>
+                <li>Mapas Planos: São desenhos que mostram um lugar de maneira bem simples. Eles podem mostrar uma cidade, um país ou até o mundo todo! Mas tudo fica em uma superfície plana, ou seja, sem volume.</li>
+                <li>Plantas Baixas: São mapas que mostram a forma de um prédio, tipo uma casa ou escola, vistos de cima. A gente vê como as coisas estão organizadas lá dentro.</li>
+            </ul>           
+        </section>
+ 
+        <div class="mapas" id="mundo">
+            <img src="Fotos/formas.jpg" alt="Imagem de mapa" class="img-ajustada-mapa">
+
+            <img src="Fotos/formas.jpg" alt="Imagem de mapa" class="img-ajustada-mapa">
+        </div>
+
+    
+        
+        <section class="selection-mapa">
+            <h2 class="section-mapa-title">Como Ler Imagens 2D? 🔍</h2>
+            <ul class="examples-list-mapa">
+                <li>Observe as Legendas: As legendas são como uma chave para entender os símbolos no mapa. Elas explicam o que cada desenho quer dizer.</li>
+                <li>Escalas: A escala no mapa diz o tamanho real das coisas! Por exemplo, 1 cm no mapa pode ser igual a 1 km na realidade.</li>
+                <li>Cores e Símbolos: A cor e os desenhos ajudam a mostrar coisas como ruas, rios e montanhas. Por exemplo, o verde pode representar um parque e o azul pode representar um rio.</li>
+                 <p class="examples-mapa">Exemplos:</p>
+            </ul>
+        </section>
+                <div class="mapas" id="mundo">
+            <img src="Fotos/formas.jpg" alt="Imagem de mapa" class="img-ajustada-mapa">
+        </div>
+
+        <section class="selection-mapa">
+            <h2 class="section-mapa-title">O que são Imagens 3D? 📐</h2>
+            <p class="section-mapa-text">Agora, vamos falar de imagens 3D, que são super legais! 🥳 As imagens 3D têm altura, largura e profundidade! Isso significa que elas parecem mais reais, como se pudéssemos tocar nelas.</p>
+            <p class="examples-mapa">     
+                <p>Exemplos de Imagens 3D:</p>
+            <ul class="examples-list-mapa">
+                <li>Modelos de Terreno: São representações de montanhas, vales e planícies, mostrando como o terreno realmente é. Esses modelos ajudam a entender melhor como o relevo de um lugar se forma!</li>
+                <li>Globo Terrestre: O globo é como uma bola gigante que mostra o mundo todo! Nele, você pode ver os continentes, oceanos e até as linhas que dividem os países.</li>
+            </ul>
+        </section>
+
+        <section class="selection-mapa">
+            <h2 class="section-mapa-title">Como Ler Imagens 3D? 🔎</h2>
+            <ul class="examples-list-mapa">
+                <li>Profundidade e Relevo: O legal das imagens 3D é que podemos ver altura e profundidade. Ou seja, vemos como as montanhas ficam mais altas e como os vales são mais baixos.
+                </li>
+                <li>Escalas e Legendas: Assim como nos mapas 2D, é importante olhar as escalas e as legendas para saber o que cada parte do modelo significa.
+                </li>
+            </ul>
+        </section>
+
+        <div class="quiz-container">
+            <h1>Vamos lembrar para Aprender?</h1>
+            <div class="question">
+                <p>O que são imagens 2D?</p>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this, false)">
+                        <img src="Fotos/cadeia alimentar.jpg" alt="Mapa Plano">
+                    </div>
+                    <div class="option" onclick="checkAnswer(this, true)">
+                        <img src="Fotos/Bicicleta.jpg" alt="Planta Baixa">
+                    </div>
+                    <div class="option" onclick="checkAnswer(this, false)">
+                        <img src="Fotos/carros.jpg" alt="Modelo de Terreno">
+                    </div>
+                    <div class="option" onclick="checkAnswer(this, false)">
+                        <img src="Fotos/cabeça.jpg" alt="Globo Terrestre">
+                    </div>
+                </div>
+            </div>
+            <div class="feedback" id="feedback"></div>
+        </div>
+        <script src="script.js"></script>
+
+    </div>
+</body>
+</html>

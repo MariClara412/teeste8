@@ -1,0 +1,991 @@
+/* Ajustes gerais*/
+#home-page {
+    font-family:'Montserrat Alternates', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-image: url('Fotos/Fundo\ simples.jpg'); 
+    background-size: cover; 
+    background-repeat: repeat; 
+    height: 400px;
+    width: 100%; 
+}
+
+
+
+/* ESTILO DO CABEÇALHO */
+
+
+header {
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    z-index: 1000; 
+    padding: 6px 4%;
+    
+}
+
+.content {
+    margin-top: 100px; 
+}
+
+
+header .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 0 4%; 
+}
+
+.logo {
+    margin-right: auto; 
+}
+
+.menu-desktop {
+    display: flex;
+    justify-content: center; 
+    flex-grow: 1; 
+}
+
+.menu-desktop ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px; 
+}
+
+.menu-desktop ul li {
+    display: inline-block;
+}
+
+header nav.menu-desktop ul li a {
+    color: #9d92ff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: .2s;
+    padding: 10px 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+header nav.menu-desktop ul li a:hover {
+    color: #fff;
+    transform: scale(1.05);
+}
+
+
+header nav ul 
+{
+     list-style-type: none;
+      display: flex; 
+      justify-content: center ; 
+       flex-grow: 1;  
+    }
+
+    header nav ul li
+     {
+        display: inline-block; 
+        padding: 0 20px; 
+     }
+
+     @media (max-width: 768px) {
+        /* O menu desktop será escondido */
+        .menu-desktop {
+            display: none;
+        }
+}
+/* MENU MOBILE */
+.btn-abrir-menu i {
+    color: #fff;
+    font-size: 40px;
+    position: fixed; /* Fixa o ícone em um lugar da tela */
+    top: 0; /* Alinha ao topo da tela */
+    right: 0; /* Alinha à direita da tela */
+}
+
+.menu-mobile {
+    display: none; /* Esconde o menu mobile por padrão */
+    background-color: red;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999999;
+    width: 0%;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.menu-mobile.abrir-menu {
+    width: 70%;
+}
+
+.menu-mobile.abrir-menu ~ .overlay-menu {
+    display: block;
+}
+
+.menu-mobile .btn-fechar-menu {
+    padding: 20px 5%;
+}
+
+.menu-mobile .btn-fechar-menu i {
+    font-size: 40px;
+    color: #fff;
+}
+
+.menu-mobile nav ul {
+    text-align: right;
+}
+
+.menu-mobile nav ul li a {
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    padding: 20px 8%;
+    font-weight: 300;
+}
+
+.menu-mobile nav ul li a:hover {
+    background-color: #0ff;
+}
+
+.overlay-menu {
+    background-color: #0000008f;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 8888;
+    display: none;
+}
+/* Menu no formato desktop: exibe até 768px */
+@media (max-width: 768px) {
+    .menu-desktop {
+        display: none; /* Esconde o menu desktop */
+    }
+
+    .menu-mobile {
+        display: block; /* Exibe o menu mobile */
+    }
+
+    .btn-abrir-menu {
+        display: block; /* Mostra o botão de abrir o menu */
+    }
+}
+
+
+/* PLANETAS MATÉRIAS */
+
+.content {
+    margin-top: 160px; 
+}
+
+.planetas { 
+    display: flex; 
+    flex-wrap: wrap; /* Permite quebra de linha em telas menores */
+    justify-content: center; /* Centraliza os planetas */
+    align-items: center;
+    gap: 30px; /* Espaçamento entre os planetas */
+    margin-top: 80px;
+    padding: 20px; 
+}
+
+.planetas .planeta { 
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.planeta img {
+    max-width: 100%;
+}
+
+/* Tamanhos e Ordens Específicos por Planeta */
+.planeta.portugues img {
+    height: 220px;
+    width: 190px;
+    order: 1; /* Posição na ordem geral */
+}
+
+.planeta.matematica img {
+    height: 200px;
+    width: auto;
+    order: 2;
+}
+
+.planeta.ciencias img {
+    height: 395px;
+    width: 210px;
+    order: 3;
+}
+
+.planeta.geografia img {
+    height: 280px;
+    width: 200px;
+    order: 4;
+}
+
+.planeta.historia img {
+    height: 220px;
+    width: 225px;
+    order: 5;
+}
+
+.planetas .planeta:hover { 
+    transform: scale(1.2); 
+}
+
+/* Responsividade para Telas Menores */
+@media (max-width: 768px) {
+    .planetas {
+        flex-direction: column; /* Coluna em telas menores */
+        gap: 20px; /* Reduz o espaçamento */
+    }
+
+    .planeta img {
+        height: auto; /* Ajusta a altura automaticamente */
+        width: 80%; /* Reduz o tamanho proporcional ao container */
+    }
+
+    /* Ajuste de Ordem para Telas Pequenas */
+    .planeta.portugues {
+        order: 1;
+    }
+    .planeta.matematica {
+        order: 2;
+    }
+    .planeta.ciencias {
+        order: 3;
+    }
+    .planeta.geografia {
+        order: 4;
+    }
+    .planeta.historia {
+        order: 5;
+    }
+}
+
+.foguete-fixo { 
+    position: absolute; 
+    bottom: 20px; 
+    right: 60px; 
+    width: 70px; 
+    transform: rotate(180deg);  
+    animation: flutuar 3s ease-in-out infinite; 
+}
+
+@keyframes flutuar { 
+    0% { transform: translateY(0) rotate(180deg); }
+    50% { transform: translateY(-20px) rotate(180deg); }
+    100% { transform: translateY(0) rotate(180deg); } 
+}
+
+       /* SESSÃO ÚLTIMAS MISSOES */
+.ultimas-missoes {
+    padding: 20px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.ultimas-missoes .titulo-PI {
+    color: #fff;
+    padding: auto;
+}
+
+.flex-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.missao {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 900px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    margin: 0 auto;
+    border-radius: 20px;
+    gap: 20px; 
+    border: 2px solid #000;
+    background-color: #b4b4e6;
+    transition: .2s;
+}
+
+.missao:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px #ffffff75;
+}
+
+.conteiner {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding: 15px;
+}
+
+.conteiner img {
+    width: 50%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.conteiner2 {
+    width: 60%;
+    text-align: left;
+}
+
+.conteiner2 h3 {
+    font-size: 1.3em;
+    color: #fff;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.conteiner2 p {
+    font-size: 0.95em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.estrelas {
+    display: flex;
+    gap: 5px;
+    margin: 10px 0;
+}
+
+.estrela {
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.estrela.cheia {
+    color: #ff9800;
+}
+
+.missao-2 .estrela.cheia {
+    color: #ff9800;
+}
+
+.missao-3 .estrela.cheia {
+    color:#ff9800;
+}
+
+.btn-continuar-home {
+    background-color: #303f5a;
+    color: #fff;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    width: 40%;
+    margin-top: 10px;
+}
+
+.btn-continuar-home:hover {
+    background-color: #6da7eb;
+    box-shadow: 0 0 10px #57439e;
+}
+
+.missao-1 { background-color: #D88585; }
+.missao-2 { background-color: #eec67b; }
+.missao-3 { background-color: #81c784; }
+
+/* Responsividade para telas menores */
+
+/* Para telas médias (tablet) */
+@media (max-width: 1024px) {
+    .conteiner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .conteiner img {
+        width: 80%; /* Aumenta a largura da imagem para se ajustar melhor */
+    }
+
+    .conteiner2 {
+        width: 100%; /* A largura do conteúdo de texto deve ocupar 100% */
+        margin-top: 10px;
+    }
+
+    .btn-continuar-home {
+        width: 60%; /* O botão ocupa 60% da largura */
+    }
+}
+
+/* Para telas pequenas (celular) */
+@media (max-width: 768px) {
+    .ultimas-missoes {
+        padding: 10px; /* Reduz o padding */
+    }
+
+    .missao {
+        width: 100%;
+        max-width: 100%; /* Assegura que o cartão da missão ocupe toda a largura disponível */
+        margin: 10px 0;
+    }
+
+    .conteiner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .conteiner img {
+        width: 100%; /* Faz a imagem ocupar toda a largura disponível */
+    }
+
+    .conteiner2 {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .btn-continuar-home {
+        width: 80%; /* Aumenta a largura do botão */
+    }
+}
+
+/* Para telas muito pequenas (dispositivos móveis muito pequenos) */
+@media (max-width: 480px) {
+    .conteiner img {
+        width: 90%; /* Ajusta ainda mais a largura da imagem */
+    }
+
+    .btn-continuar-home {
+        width: 90%; /* Botão ocupa quase toda a largura da tela */
+    }
+
+    .missao {
+        margin: 15px 0; /* Um pouco mais de margem entre as missões */
+    }
+
+    .conteiner2 h3 {
+        font-size: 1.1em; /* Reduz o tamanho da fonte para não sobrecarregar */
+    }
+
+    .conteiner2 p {
+        font-size: 0.9em; /* Reduz o tamanho da fonte do texto */
+    }
+}
+
+
+
+
+.accessibility-buttons {
+    position: absolute;
+    bottom: 10px; /* Distância do canto inferior */
+    right: 10px; /* Distância do canto direito */
+    display: flex;
+    flex-direction: column; /* Torna os botões verticais */
+    gap: 10px; /* Espaçamento entre os botões */
+  }
+  
+  .accessibility-buttons button {
+    background-color: #0a0a23;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .accessibility-buttons button:hover {
+    background-color: #1c1c3b;
+  }
+  
+  body.high-contrast {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  body.high-contrast a {
+    color: #0ff;
+  }
+  
+  body.high-contrast button {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #0ff;
+  }
+
+    /* MASCOTE */
+.mascote {
+    position: absolute;
+    bottom: 10%; /* Ajusta a posição do mascote em relação ao fundo */
+    left: 5%; /* Coloca o mascote mais à esquerda, mas pode ser ajustado */
+    width: 15vw; /* Largura do mascote com base na largura da tela */
+    max-width: 250px; /* Largura máxima para evitar que o mascote fique muito grande */
+    cursor: pointer;
+    animation: flutuar 3s ease-in-out infinite; /* Animação de flutuação */
+}
+
+.mascote img {
+    width: 100%; 
+    height: auto; 
+    object-fit: contain; /* Garante que a imagem se ajuste bem ao espaço disponível */
+}
+
+@keyframes flutuar {
+    0% {
+        transform: translateY(0); /* Início da animação */
+    }
+    50% {
+        transform: translateY(-10px); /* Sobe um pouco */
+    }
+    100% {
+        transform: translateY(0); /* Desce e continua a flutuar */
+    }
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+    .mascote {
+        width: 20vw; /* Aumenta a largura do mascote em telas menores */
+        max-width: 200px; /* Ajusta a largura máxima */
+        bottom: 5%; /* Ajusta a posição para que não fique colado no fundo */
+        left: 50%; /* Coloca o mascote centralizado */
+        transform: translateX(-50%); /* Compensa o `left` para centralizar corretamente */
+    }
+}
+
+/* Responsividade para telas ainda menores */
+@media (max-width: 480px) {
+    .mascote {
+        width: 30vw; /* Aumenta ainda mais a largura do mascote em telas pequenas */
+        max-width: 180px; /* Ajusta a largura máxima para não ficar grande demais */
+        bottom: 5%; /* Aumenta o afastamento do fundo */
+    }
+}
+
+        
+        
+          /*RODAPÉ*/
+          
+          
+        footer {
+            background-color: #0a0a23;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px; 
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px; 
+        }
+        
+        .footer-menu {
+            display: flex;
+            gap: 20px; 
+        }
+        
+        .footer-menu a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-menu a:hover {
+            color: #bdc8fa;
+        }
+       
+       
+        /* Responsividade */
+
+
+@media screen and (max-width: 768px) {
+    header .interface {
+        flex-direction: column; /* Alinha logo e menu verticalmente */
+        align-items: center;
+    }
+
+    .menu-desktop ul {
+        flex-direction: column; /* Alinha os itens do menu verticalmente */
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu-desktop li {
+        margin: 10px 0; /* Espaçamento entre os itens do menu */
+    }
+
+    .planetas {
+        flex-direction: column; /* Alinha os planetas verticalmente em telas menores */
+        align-items: center; /* Centraliza os planetas */
+    }
+
+    .planeta img {
+        width: 80%; /* Ajusta a largura das imagens dos planetas */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+
+    .ultimas-missoes {
+        padding: 10px 2%; /* Ajusta o padding */
+    }
+
+    .missao {
+        flex-direction: column; /* Alinha imagem e texto verticalmente */
+        width: 90%; /* Ajusta a largura das missões */
+    }
+
+    .missao img {
+        width: 100%; /* Imagem ocupa toda a largura do contêiner */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+
+    .mascote {
+        width: 70%; /* Ajusta a largura do mascote em telas menores */
+        left: 10%; /* Centraliza horizontalmente */
+    }
+
+    footer {
+        padding: 10px; /* Ajusta o padding do rodapé */
+    }
+
+    .footer-menu {
+        flex-direction: column; /* Alinha os itens do rodapé verticalmente */
+    }
+
+    .footer-menu a {
+        margin: 5px 0; /* Espaçamento entre os links do rodapé */
+    }
+
+    .planeta img {
+        height: 200px;
+         
+       } 
+      
+       .planeta.geografia img {
+            height: 280px; 
+            width: 200px;
+       }
+       .planeta.portugues img {
+           height: 220px; 
+           width: 190px;
+      }
+      .planeta.ciencias img {
+       height: 395px; 
+       width: 210px;
+   
+   }
+   
+}
+
+
+
+
+/* Estilo das seções */
+
+.introducao, .objetivo, .publico-alvo, .seguranca, .valores {
+    margin-bottom: 30px;
+}
+
+/* Estilo para o botão de chamada para ação */
+
+.call-to-action .btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.call-to-action .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsividade para telas menores */
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
+
+
+
+/* Estilo do Formulário */
+.formulario-contato {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.campo-form {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.campo-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #ddd;
+}
+
+.campo-form input,
+.campo-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+}
+
+.campo-form input:focus,
+.campo-form textarea:focus {
+    border-color: #45439e;
+    outline: none;
+}
+
+/* Estilo do Botão de Envio */
+.btn-enviar {
+    padding: 12px 30px;
+    font-size: 18px;
+    background-color: #33238d;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-enviar:hover {
+    background-color: #fff;
+    color: #5e439e;
+    box-shadow: 0 0 10px #5e3e99;
+}
+
+
+
+/* Estilo para a seção 'Sobre' */
+
+.sobre-site {
+    background-image: url(Fotos/Fundo\ simples.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%; 
+    height: 100%; 
+}
+
+.sobre {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.conteúdo div {
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.conteúdo div:nth-child(odd) {
+    background-color: #f0f8ff; 
+}
+
+.conteúdo div:nth-child(even) {
+    background-color: #e6e6fa; 
+}
+
+
+.conteúdo div h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+
+.conteúdo div p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* Cadastro */
+
+.cadastro {
+    font-family: 'Montserrat Alternates', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(Fotos/Fundo\ simples.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%; 
+    height: 100%; 
+}
+
+
+#contato-cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.interface-cadastro {
+    background-color: transparent;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+#contato-cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.interface-cadastro {
+    background-color: transparent;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    backdrop-filter: blur(40px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.titulo-cadastro {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+.titulo span {
+    color: #fff;
+}
+
+p .cadastro {
+    color: #333;
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.campo-form-cadastro {
+    margin-bottom: 15px;
+    text-align: left;
+    
+}
+
+label {
+    color: #ffffff;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1em;
+    box-sizing: border-box;
+    
+}
+
+
+.btn-enviar-cadastro-c {
+    background-color: #dad152; 
+    color: #ece3ff; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px; 
+    cursor: pointer;
+    width: 100%;
+    font-size: 1em;
+    transition: background-color 0.3s ease; 
+}
+
+
+.btn-enviar-cadastro:hover {
+    background-color: #357abd; 
+}
+
+
+.mensagem {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+  
+  
+
+
+
+                    
+        
+        

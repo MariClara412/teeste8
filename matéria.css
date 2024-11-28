@@ -1,0 +1,549 @@
+header {
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    z-index: 1000; 
+    padding: 6px 4%;
+    background-color: #0a0a23; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+.content {
+    margin-top: 100px; 
+}
+
+
+header .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 0 4%; 
+}
+
+.logo {
+    margin-right: auto; 
+}
+
+.menu-desktop {
+    display: flex;
+    justify-content: center; 
+    flex-grow: 1; 
+}
+
+.menu-desktop ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px; 
+}
+
+.menu-desktop ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    color: #9d92ff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: .2s;
+    padding: 10px 15px;
+}
+
+header nav ul li a:hover {
+    color: #fff;
+    transform: scale(1.05);
+}
+
+
+header nav ul 
+{
+     list-style-type: none;
+      display: flex; 
+      justify-content: center ; 
+       flex-grow: 1;  
+    }
+
+    header nav ul li
+     {
+        display: inline-block; 
+        padding: 0 20px; 
+     }
+
+
+
+
+/* PÁGINA CIÊNCIAS */
+
+
+* {
+  
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates', sans-serif;
+    box-sizing: border-box;
+}
+
+
+#page-ciencias {
+    background-color: #c1f5a6;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 100px;
+}
+
+#page-ciencias .container {
+    width: 90%;
+    max-width: 600px;
+}
+
+#page-ciencias #menu-ciencias {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
+
+#page-ciencias .back-btn {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+#page-ciencias #C {
+    margin-left: 10px;
+    font-size: 24px;
+    color: #fff;
+}
+
+#page-ciencias .missions h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#page-ciencias .mission-card {
+    display: flex;
+    background-color: #81c784;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    border: 1px solid #000;
+}
+
+#page-ciencias .mission-card img {
+    width: 190px;
+    height: 150px;
+    border-radius: 8px;
+    margin-right: 10px;
+    border: 1px solid #000;
+}
+
+#page-ciencias .mission-info h3 {
+    font-size: 16px;
+    color: #333;
+}
+
+#page-ciencias .mission-info p {
+    font-size: 12px;
+    color: #666;
+    margin: 5px 0;
+}
+
+#page-ciencias .mission-btn {
+    background-color: #4b7f4a;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 30%;
+}
+
+
+
+  
+  .science-text {
+    max-width: 60%;
+  }
+  
+  .science-text h1 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+  }
+  
+  .science-text p {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 1.2rem;
+    color: #34495e;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  
+  .science-button {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 1.2rem;
+    color: #ffffff;
+    background-color: #3498db;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .science-button:hover {
+    background-color: #2980b9;
+  }
+  
+  .science-image img {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    border-radius: 30px;
+    padding: 20px;
+  }
+
+
+  /*Página de Matemática */
+#page-matematica {
+    background-color: #b5d9f5;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 100px;
+}
+
+#page-matematica .container {
+    width: 90%;
+    max-width: 600px;
+}
+
+#page-matematica #menu-matematica {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#page-matematica .back-btn {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+#page-matematica #M {
+    margin-left: 10px;
+    font-size: 24px;
+    color: #fff;
+}
+
+#page-matematica .missions h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#page-matematica .mission-card {
+    display: flex;
+    background-color: #a9cce3;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    border: 1px solid #000;
+}
+
+#page-matematica .mission-card img {
+    width: 190px;
+    height: 150px;
+    border-radius: 8px;
+    margin-right: 10px;
+    border: 1px solid #000;
+}
+
+#page-matematica .mission-info h3 {
+    font-size: 16px;
+    color: #333;
+}
+
+#page-matematica .mission-info p {
+    font-size: 12px;
+    color: #666;
+    margin: 5px 0;
+}
+
+#page-matematica .mission-btn {
+    background-color: #2e86c1;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 30%;
+}
+
+/*Página de História */
+
+
+
+#page-historia {
+    background-color: #e0d7f0;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 100px;
+}
+
+#page-historia .container {
+    width: 90%;
+    max-width: 600px;
+}
+
+#page-historia #menu-historia {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#page-historia .back-btn {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+#page-historia #H {
+    margin-left: 10px;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+#page-historia .missions h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#page-historia .mission-cardh {
+    display: flex;
+    background-color: #d2aed7;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    border: 1px solid #000;
+}
+
+#page-historia .mission-cardh img {
+    width: 190px;
+    height: 150px;
+    border-radius: 8px;
+    margin-right: 10px;
+    border: 1px solid #000;
+}
+
+#page-historia .mission-info h3 {
+    font-size: 16px;
+    color: #333;
+}
+
+#page-historia .mission-info p {
+    font-size: 12px;
+    color: #666;
+    margin: 5px 0;
+}
+
+#page-historia .mission-btn {
+    background-color: #69356b;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 30%;
+}
+
+/*Página de Geografia */
+
+#page-geografia {
+    background-color: #f7deb1;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 100px;
+}
+
+#page-geografia .container {
+    width: 90%;
+    max-width: 600px;
+}
+
+#page-geografia #menu-geografia {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#page-geografia .back-btn {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+#page-geografia #G {
+    margin-left: 10px;
+    font-size: 24px;
+    color: #fff;
+}
+
+#page-geografia .missions h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#page-geografia .mission-card {
+    display: flex;
+    background-color: #eec67b;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    border: 1px solid #000;
+}
+
+#page-geografia .mission-card img {
+    width: 190px;
+    height: 150px;
+    border-radius: 8px;
+    margin-right: 10px;
+    border: 1px solid #000;
+}
+
+#page-geografia .mission-info h3 {
+    font-size: 16px;
+    color: #333;
+}
+
+#page-geografia .mission-info p {
+    font-size: 12px;
+    color: #666;
+    margin: 5px 0;
+}
+
+#page-geografia .mission-btn {
+    background-color: #bb6f0c;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 30%;
+}
+
+.stars {
+    font-size: 18px;
+}
+  
+.estrela {
+    color: #fff;
+}
+
+.estrela.cheia {
+    color: #ff9800;
+}
+
+  
+/* PÁGINA PORTUGUÊS */
+
+#page-portugues {
+    background-color: #D88585;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 100px;
+    font-family:'Montserrat Alternates', sans-serif;
+
+}
+
+#page-portugues .container-p-port {
+    width: 90%;
+    max-width: 600px;
+}
+
+#page-portugues #menu-portugues {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#page-portugues .back-btn-port {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+#page-portugues #P {
+    margin-left: 10px;
+    font-size: 24px;
+    color: #fff;
+}
+
+#page-portugues .missions-port h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#page-portugues .mission-card-port {
+    display: flex;
+    background-color: #e0b3b3;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    border: 1px solid #000;
+}
+
+#page-portugues .mission-card-port img {
+    width: 190px;
+    height: 150px;
+    border-radius: 8px;
+    margin-right: 10px;
+    border: 1px solid #000;
+}
+
+#page-portugues .mission-info-port h3 {
+    font-size: 16px;
+    color: #333;
+}
+
+#page-portugues .mission-info-port p {
+    font-size: 12px;
+    color: #666;
+    margin: 5px 0;
+}
+
+#page-portugues .mission-btn-port {
+    background-color: #3a5f6f;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+   
+}
